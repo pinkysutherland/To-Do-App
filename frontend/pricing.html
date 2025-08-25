@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App | Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    
+    <!-- ↓ Navbar ↓-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.svg" alt="Logo" height="50px" width="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <img src="./images/menuicon.svg" alt="Hamburger Icon" height="40px" width="auto">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./features.html" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
+                   <li class="nav-item d-block d-lg-none"><a href="./login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item d-block d-lg-none"><a href="./signup.html" class="nav-link">Signup</a></li> 
+                </ul>
+
+            
+                <div class="d-flex gap-2 ms-3 d-lg-block d-none">
+                    <a class="btn btn-outline-light" href="./login.html">Login</a>
+                    <a class="btn btn-outline-light" href="./signup.html">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ↓ Navbar ↓-->
+
+    <!-- ↓ Hero ↓-->
+    <section class="d-flex justify-content-center align-items-center flex-column bg-img2">
+        <h1 class="display-5 fw-bold text-center mt-5">Pricing</h1>
+        <p>Organise you work and life. Start for free</p>
+        
+       
+        <label class="toggle-switch">
+            <input type="checkbox" id="myToggle">
+            <span class="slider"></span>
+            <span class="text on">Annually</span>
+            <span class="text off">Monthly</span>
+        </label>
+        <br>
+
+        
+        <!-----------pricing---------------->
+        <div class="container " >
+            <div class="row row-cols-1 row-cols-md-4 justify-content-center">
+                <div class="col px-2 my-2">
+                    <div class="card card-pricing h-100 shadow py-2 bg-white bg-opacity-50" >
+                        <div class="card-header">
+                            <h5 class="card-title fw-bold text-center">Free</h5>
+                            <p class="card-text text-center">For individuals. <br>Keep track of your personal and work tasks</p>
+                            <div class="text-center"><sup>AUD</sup><span id="free" class="display-6 fw-bold">$0</span>&nbsp;&nbsp;<br><span><small>Free forever</small></span></p>
+                            <a href="signup.html" class="btn btn-warning btn-sm px-4">Get Started</a> </div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Free includes</strong></p>
+                            <ul class="checkmark-list"><li>100 personal and work tasks</li>
+                                <li>Task reminders</li>
+                                <li>Calendar layouts</li>
+                                <li>Dashboard </li>
+                                <li>Progress reports</li>
+                                <li>5 GB file storage</li></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col px-2 my-2">
+                    <div class="card card-pricing h-100 shadow py-2 bg-white bg-opacity-50">
+                        <div class="card-header">
+                            <h5 class="card-title fw-bold text-center">Basic</h5>
+                            <p class="card-text text-center">For small team of 5. <br>Manage all your team’s work in one place.</p>
+                            
+                            <div class="text-center"><sup>AUD</sup><span id="price1" class="display-6 fw-bold">$8</span>&nbsp;&nbsp;<br><span id="label1"><small>per user / month</small></span></p>
+                            <a href="signup.html" class="btn btn-warning btn-sm px-4">Get Started</a> </div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Includes free +</strong></p>
+                            <ul class="checkmark-list"><li>Create or join a team of 5 </li>
+                                <li>Shared team workspace </li>
+                                <li>200 personal & team tasks</li>
+                                <li>Group tasks into Projects</li>
+                                <li>Assign task owner</li>
+                                <li>Progress tracking</li>
+                                
+                                <li>20GB file storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col px-2 my-2">
+                    <div class="card card-pricing h-100 shadow py-2 bg-white bg-opacity-50">
+                        <div class="card-header">
+                            <h5 class="card-title fw-bold text-center">Standard</h5>
+                            <p class="card-text text-center">For big team. <br>Collaborate & optimize your work across teams.</p>
+                            <div class="text-center"><sup>AUD</sup><span id="price2" class="display-6 fw-bold">$15</span>&nbsp;&nbsp;<br><span id="label2"><small>per user / month</small></span></p>
+                            <a href="signup.html" class="btn btn-warning btn-sm px-4">Get Started</a> </div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Includes basic +</strong></p>
+                            <ul class="checkmark-list"><li>Team size of up to 100</li>
+                                <li>Workspace for 100 people</li>
+                                <li>1000 personal & team tasks</li>
+                                <li>Calendar layout for team projects</li>
+                                <li>Shared templates</li>
+                                <li>Custom dashboards </li>
+                                <li>Custom progress reports</li>
+                                <li>50GB file storage</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col px-2 my-2">
+                    <div class="card card-pricing h-100 shadow py-2 bg-white bg-opacity-50">
+                        <div class="card-header">
+                            <h5 class="card-title fw-bold text-center">Pro</h5>
+                            <p class="card-text text-center">The enterprise <br> Streamline complex workflows at scale.</p><br>
+                            <div class="text-center"><sup>AUD</sup><span id="price3" class="display-6 fw-bold">$20</span>&nbsp;&nbsp;<br><span id="label3"><small>per user / month</small></span></p>
+                            <a href="signup.html" class="btn btn-warning btn-sm px-4">Get Started</a> </div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Includes standard +</strong></p>
+                            <ul class="checkmark-list"><li>Team of 100+ </li>
+                                <li>Unlimited personal & team tasks</li>
+                                <li>Workspace for 1000 people</li>
+                                <li>Custom layout for team projects</li>
+                                <li>Team activity log</li>
+                                <li>Dashboards templates </li>
+                                <li>Team roles and permission</li>
+                                <li>Custom task reminders</li>
+                                <li>100GB file storage</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+         <br><br>
+    </section>
+   
+    <!-- ↓ Hero ↓-->
+
+
+    <!-- ↓ Footer ↓-->
+    <footer >
+        <div class="container py-5">
+            <div class="d-flex justify-content-between flex-column gap-5 gap-md-0 flex-md-row align-items-center px-3 mb-5">
+                <a href="./index.html"><img src="./images/logo.svg" alt="logo" height="120px" width="auto"></a>
+                <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xl-4">
+                    <h3 class="text-white mb-3 text-center text-md-start">Subscribe to our Newsletter</h3>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-secondary">Subscribe</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="d-flex justify-content-center flex-column gap-3 flex-md-row aligh-items-center">
+                <a class="nav-link" href="#">Privacy Policy</a> <p class="m-0 d-none d-md-block">|</p>
+                <a class="nav-link" href="#">Terms of Service</a> <p class="m-0 d-none d-md-block">|</p>
+                <p>ListMe &copy; 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ↓ Footer ↓-->
+
+
+
+
+    <!-- ↓ Scripts ↓-->
+     <script>
+        
+        document.getElementById('myToggle').addEventListener('change', function() {
+        let labelText, price1, price2, price3;
+        if (this.checked) {
+            //console.log('Toggle is ON');
+            labelText="<small>per user / year </small>";
+            price1="$80";
+            price2="$150";
+            price3="$200";
+            
+        } else {
+            //console.log('Toggle is OFF');
+            // Perform actions when OFF
+            labelText="<small>per user / month</small>";
+            price1="$8";
+            price2="$15";
+            price3="$20";
+            
+        }
+        document.getElementById('label1').innerHTML = labelText;
+        document.getElementById('label2').innerHTML = labelText;
+        document.getElementById('label3').innerHTML = labelText;
+        document.getElementById('price1').innerHTML = price1;
+        document.getElementById('price2').innerHTML = price2;
+        document.getElementById('price3').innerHTML = price3;
+        });
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+</body>
+</html>
