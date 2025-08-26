@@ -139,7 +139,7 @@ async function displayTasks() {
 
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <button data-id="${task._id}" class="btn btn-outline-primary btn-sm shadow-sm notDone" type="button">Not done</button>
+                    <button data-id="${task._id}" class="btn btn-primary btn-sm shadow-sm notDone" type="button">Not done</button>
                     </div>
                 <p class="mb-0 text-decoration-line-through opacity-50"><strong>Created on: </strong>${new Date(task.createdOn).toLocaleDateString()}</p>
             </div>
@@ -155,8 +155,8 @@ async function displayTasks() {
 
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <button data-bs-toggle="modal" data-bs-target="#editTaskWindow" data-id="${task._id}" data-title="${task.title}" data-description="${task.description}" data-due-date="${task.dueDate}" class="btn btn-outline-primary btn-sm shadow-sm edit" type="button">Edit</button>
-                    <button data-id="${task._id}" class="btn btn-outline-primary btn-sm shadow-sm done" type="button">Done</button>
+                    <button data-bs-toggle="modal" data-bs-target="#editTaskWindow" data-id="${task._id}" data-title="${task.title}" data-description="${task.description}" data-due-date="${task.dueDate}" class="btn btn-primary btn-sm shadow-sm edit" type="button">Edit</button>
+                    <button data-id="${task._id}" class="btn btn-primary btn-sm shadow-sm done" type="button">Done</button>
                 </div>
                 <p class="mb-0"><strong>Created on: </strong>${new Date(task.createdOn).toLocaleDateString()}</p>
             </div>
