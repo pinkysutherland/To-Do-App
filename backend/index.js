@@ -21,7 +21,13 @@ const app = express(); //using Express.js to power the app
 // -------------------------------- ↓ MIDDLEWARE SETUP ↓ -----------------------------------
 
 app.use(express.json()); // Uses express in JSON format
-app.use(cors('*')); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
+
+const corsOptions = {
+    origin: "https://to-do-app-theta-weld.vercel.app",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true
+}
+app.use(cors(corsOptions)); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
 
 
 
